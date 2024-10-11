@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #FA8C78;
+    --custom-gray: hsl(0, 0%, 37%, 0.18);
+    --precipitation-gradient: linear-gradient(to bottom, #A5F4E6, #3C7EB8);
+    --morning-gradient: linear-gradient(to bottom, #eae4c1, #ffedde);
+    --afternoon-gradient: linear-gradient(to bottom, #D3EBFF, #94A1AC);
+    --evening-gradient: linear-gradient(to bottom, #7E80E1, #323253);
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+  }}

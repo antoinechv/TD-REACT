@@ -1,5 +1,5 @@
 import PrecipitationCard from "./components/PrecipitationCard";
-import WeatherCodes from "./components/Weathercode/WeatherCodes";
+import WeatherCodes from "./components/WeatherCodes";
 import NavBar from "./components/NavBar";
 import WindCard from "./components/WindCard";
 
@@ -14,6 +14,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await fetch("/weather.json");
+        // https://api.open-meteo.com/v1/forecast?latitude=28.5383&longitude=-81.3792&hourly=temperature_2m,precipitation_probability,weather_code,wind_speed_10m,wind_direction_10m&forecast_days=1
         const data = await response.json();
         setWeatherData(data);
         setDataLoaded(true);
